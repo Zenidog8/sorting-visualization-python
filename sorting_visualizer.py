@@ -35,7 +35,7 @@ def visualize_sorting_algorithm(sort_algorithm, data):
 
     bars = ax.bar(range(len(data)), data, color='red')
     ani = animation.FuncAnimation(fig, update_figure, frames=sort_algorithm(
-        data), fargs=(bars,), blit=True, repeat=False, cache_frame_data=False)
+        data), fargs=(bars,), blit=True, repeat=False, cache_frame_data=False, interval=0.5)
 
     plt.show()
 
